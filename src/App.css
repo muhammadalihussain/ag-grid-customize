@@ -13,26 +13,155 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard__card {
+  margin-top: 50px;
+  width: 70vw;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  border-radius: 25px;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.action-button {
+	border: none;
+	color: white;
+	padding: 3px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	opacity: 0.7;
+}
+.divider_fullwidth {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	margin-top: 5px;
+	margin-bottom: 60px !important;
+	height: 2px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.ag-theme-alpine .ag-row {
+	height: 42px;
+	background-color: #fff;
+	background-color: var(--ag-background-color, #fff);
+	color: #181d1f;
+	color: var(--ag-data-color, var(--ag-foreground-color, #181d1f));
+	border-width: 1px;
+	border-color: #dde2eb;
+	/* border-color: var(--ag-row-border-color, var(--ag-secondary-border-color, #dde2eb)); */
+	border-bottom-style: solid;
 }
+
+.action-button:hover {
+	opacity: 1;
+}
+
+	.action-button.edit:hover {
+		text-decoration: none;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	.action-button.delete:hover {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+
+	.action-button.edit {
+		text-decoration: underline;
+		cursor: pointer;
+		color: #0000EE; /* Blue */
+	}
+
+	.action-button.update {
+		text-decoration: underline;
+		cursor: pointer;
+		color: #0000EE; /* Blue */
+	}
+
+	.action-button.delete {
+		text-decoration: underline;
+		cursor: pointer;
+		color: #0000EE; /* Blue */
+	}
+
+	.action-button.delete:hover {
+		text-decoration: underline;
+		cursor: pointer;
+		color: #0000EE; /* Blue */
+	}
+
+.edit-css-class {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #0000EE; /* Blue */
+}
+
+.action-button.cancel {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #0000EE; /* Blue */
+}
+
+.MuiButton-outlinedSizeLarge {
+	padding: 13px 21px !important;
+	font-size: 0.9375rem;
+}
+.ag-cell-focus, .ag-cell {
+    border: none !important;
+}
+.ag-row {
+    border: transparent!important;
+}
+
+
+  ::ng-deep .ag-cell-focus,.ag-cell-no-focus{
+	border:none !important;
+	}
+	::ng-deep .no-border.ag-cell:focus{
+	border:none !important;
+	outline: none;
+	}
+
+	ag-header-cell-label {
+		justify-content: center;
+	}
+	
+	
+
+	/*.MuiInputBase-input {
+		text-align: center !important;
+	}*/
+	
+
+
+	.ag-row-hover {
+		background-color: #e8f4f8 !important;
+	}
+
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: 8px;
+		height: 8px;
+	}
+	
+	::-webkit-scrollbar-thumb {
+		border-radius: 4px;
+		background-color: white;
+		box-shadow: 0 0 1px white;
+	}
+	
+	.ag-body-viewport-wrapper.ag-layout-normal {
+		display:none;
+		overflow-x: hidden;
+	}
